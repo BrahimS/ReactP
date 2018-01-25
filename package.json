@@ -1,0 +1,10 @@
+{
+  "name": "react-single-web-app",
+  "version": "1.0.0",
+  "description": "Thie is a free spa website",
+  "main": "index.js",
+  "repository": "https://github.com/BrahimS/ReactP",
+  "author": "Brahim Sourny",
+  "license": "GENERAL PUBLIC LICENSE",
+  "private": false
+}
