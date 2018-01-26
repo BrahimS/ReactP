@@ -5,6 +5,33 @@
   "main": "index.js",
   "repository": "https://github.com/BrahimS/ReactP",
   "author": "Brahim Sourny",
-  "license": "GENERAL PUBLIC LICENSE",
-  "private": false
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "node ./dist/server.js",
+    "build": "webpack",
+    "clean": "rimraf dist node_modules",
+    "i": "yarn install",
+    "build-babel": "yarn build-server && yarn build-client ",
+    "build-client": "babel src/client --copy-files --out-dir ./dist/public",
+    "build-server": "babel src/server --out-dir ./dist",
+    "test": "jest ./src"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "npm-run-parallel": "^0.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^22.1.4",
+    "rimraf": "^2.6.2",
+    "webpack-node-externals": "^1.6.0"
+  }
 }
